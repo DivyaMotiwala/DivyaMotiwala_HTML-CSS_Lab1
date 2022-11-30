@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                background-color: red;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                margin: -8px ;
+                
+            }
+
+            .parent-menu{
+                background-color: grey;
+                list-style-type: none;
+                margin-top: 8px;
+                margin-left: -8px;
+                margin-right: -8px;
+            }
+            
+            .parent-menu > li{
+                display: inline-block;
+                padding: 12px;
+                color: white;
+                
+            }
+
+            .parent-menu > li > a:hover{
+                background-color: black;
+            }
+
+            .child-menu{
+                background-color: lightgray;
+                list-style-type: none;
+                color: blue;
+                position: absolute;
+                top: 40px;
+                left: 0px;
+
+            }
+
+            .child-default-display{
+                display: none;
+            }
+            .item-containing-child-menu{
+                position: relative;
+            }
+
+            .item-containing-child-menu:hover .child-menu{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Demo of Dropdown</h1>
+
+       <ul class="parent-menu">
+            <li><a>Link 1</a></li>
+            <li class="item-containing-child-menu">
+                <a>Link 2</a>
+                <ul class="child-menu child-default-display">
+                    <li><a>DD_Link_1</a></li>
+                    <li><a>DD_Link_2</a></li>
+                    <li><a>DD_Link_3</a></li>
+
+                </ul>
+            </li>
+            <li  class="item-containing-child-menu">
+                <a>Link 3</a>
+                <ul class="child-menu child-default-display">
+                    <li><a>DD_Link_1</a></li>
+                    <li><a>DD_Link_2</a></li>
+                    <li><a>DD_Link_3</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

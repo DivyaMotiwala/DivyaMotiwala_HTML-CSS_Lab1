@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url('smoke-color-colour-abstract.jpg');
+            margin: 0%;
+
+        }
+
+        .form-styler {
+            border: 1px solid white;
+            min-width: 350px;
+            border-radius: 4px;
+            position: absolute;
+            top: 15%;
+            left: 35%;
+            padding-left: 40px;
+
+        }
+
+        .buttonstyler {
+            background-color: plum;
+            border: 0em;
+            border-radius: 10%;
+            color: white;
+            margin: 20px;
+            width: 80px;
+            height: 30px;
+        }
+
+        .inputstyler {
+            margin: 4px;
+            display: block;
+            min-width: 100px;
+            border: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: whitesmoke;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input:focus {
+            outline: none;
+            color: white;
+            background-color: cadetblue;
+        }
+        h1{
+            padding-left: 4px;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="form-styler">
+        <form id="gmail_form">
+            <h1>Create Gmail Account</h3>
+
+            <input type="text" placeholder="Full Name" class="inputstyler">
+            <input type="number" placeholder="Contact Number" min="0000000000" max="9999999999" class="inputstyler">
+            <input type="email" placeholder="Enter email id" class="inputstyler">
+            <button class="buttonstyler">Reset</button>
+            <button class="buttonstyler">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
